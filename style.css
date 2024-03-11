@@ -1,0 +1,248 @@
+.number {
+  border-radius: 50%;
+  background-color: gray;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 10px;
+}
+
+img {
+  height: 200px;
+  width: 200px;
+}
+
+.list__inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.list__inputs > input, button, textarea {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+table,th,td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.table__txt-center {
+  padding: 20px;
+}
+
+.tr__first > td {
+  padding: 20px 20px 20px 0;
+}
+
+.tr__second {
+  empty-cells: hide;
+}
+
+.text {
+  width: 200px;
+  border: 1px solid #000;
+}
+
+.text__second {
+  white-space: nowrap;
+}
+
+.text__third {
+  white-space: pre;
+}
+
+.text__forth {
+  white-space: break-spaces;
+}
+
+.background {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  background-color: #e355ff;
+  padding: 10px 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid;
+}
+
+.container:first-of-type {
+  margin-right: 10px;
+}
+
+.background > p {
+  height: 50px;
+  background-color: #a12e2e;
+  margin-bottom: 10px;
+}
+
+.background__div {
+  height: 50px;
+  background-color: #a12e2e;
+  margin-bottom: 10px;
+}
+
+.container > span {
+  height: 50px;
+  width: 150px;
+  background-color: #a12e2e;
+}
+
+.background > h3 {
+  height: 50px;
+  background-color: #a12e2e;
+}
+
+.background > button {
+  height: 50px;
+  width: 200px;
+  background-color: #a12e2e;
+}
+
+.container > section {
+  height: 50px;
+  width: 150px;
+  background-color: #a12e2e;
+  display: inline-block;
+}
+
+.container > :not(:first-child) {
+  margin-left: 10px;
+}
+
+/* Section #6 */
+
+/* 1 */
+.six > div > p {
+  color: red;
+}
+
+/* 2 */
+.six > div > h2 {
+  color: red;
+}
+
+/* 3 */
+.six > #test > p {
+  border: 2px pink solid;
+}
+
+/* 4 */
+.six > #test > h2 {
+  border: 2px pink solid;
+}
+
+/* 5 */
+.bbb {
+  background-color: #54ee6e;
+}
+
+/* 6 */
+#test > .bbb {
+  border: 5px solid #5900ff;
+}
+
+/* 7 */
+.bbb + p {
+  background-color: #000;
+  color: white;
+}
+
+/* 8 */
+h2 + .bbb + #test {
+  color: pink;
+}
+
+/* 9 */
+#test > p[class="bbb"] {
+  font-size: 40px;
+}
+
+/* 10 */
+.bbb.xxx {
+  border: 5px dashed pink;
+}
+
+/* 11 */
+p.bbb, h2.xxx {
+  color: gray;
+}
+
+/* 12 */
+#test > p.bbb, #test > p.xxx {
+  color: wheat;
+}
+
+/* 13 */
+.fff * {
+  color: pink;
+}
+
+/* 14 */
+.fff > p {
+  color: pink;
+}
+
+/* 15 */
+p.fff {
+  color: pink;
+}
+
+/* 16 */
+.fff > .bbb {
+  color: pink;
+}
+
+/* 17 */
+.fff > h2.bbb {
+  color: pink;
+}
+
+/* 18 */
+span {
+  color: pink;
+}
+
+/* 19 */
+[data-value='45'] {
+  color: pink;
+}
+
+/* 20 */
+.parent .child {
+  color: pink;
+}
+
+/* 21 */
+.text.active {
+  color: pink;
+}
+
+/* 22 */
+#my-list li:nth-child(2) {
+  color: pink;
+}
+
+/* 23 */
+.six__parent > h1 + p {
+  color: red;
+}
+
+/* 24 */
+.six__parent > div + p {
+  border: 3px pink dashed;
+}
+
+/* 25 */
+.six__parent > * ~ :not(img) {
+  border: 3px solid black;
+}
+
