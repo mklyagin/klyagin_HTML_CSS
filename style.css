@@ -120,129 +120,130 @@ table,th,td {
 
 /* Section #6 */
 
-/* 1 */
-.six > div > p {
+/* 1  0/0/0/2*/
+.six > div p {
   color: red;
 }
 
-/* 2 */
-.six > div > h2 {
+/* 2 0/0/0/2*/
+.six > div h2 {
   color: red;
 }
 
-/* 3 */
-.six > #test > p {
+/* 3 0/1/0/1*/
+.six > #test p {
   border: 2px pink solid;
 }
 
-/* 4 */
-.six > #test > h2 {
+/* 4 0/1/0/1*/
+.six > #test h2 {
   border: 2px pink solid;
 }
 
-/* 5 */
+/* 5 0/0/1/0*/
 .bbb {
   background-color: #54ee6e;
 }
 
-/* 6 */
-#test > .bbb {
+/* 6 0/1/1/0*/
+#test .bbb {
   border: 5px solid #5900ff;
 }
 
-/* 7 */
-.bbb + p {
+/* 7 0/0/1/1*/
+p.bbb {
   background-color: #000;
   color: white;
 }
 
-/* 8 */
-h2 + .bbb + #test {
+/* 8 0/1/1/1*/
+h2.bbb#test {
   color: pink;
-}
-
-/* 9 */
-#test > p[class="bbb"] {
   font-size: 40px;
 }
 
-/* 10 */
+/* 9 0/1/1/1*/
+#test p.bbb {
+  font-size: 40px;
+}
+
+/* 10 0/0/2/0*/
 .bbb.xxx {
   border: 5px dashed pink;
 }
 
-/* 11 */
+/* 11 0/0/2/2*/
 p.bbb, h2.xxx {
   color: gray;
 }
 
-/* 12 */
-#test > p.bbb, #test > p.xxx {
+/* 12 0/2/2/2*/
+#test p.bbb, #test p.xxx {
   color: wheat;
 }
 
-/* 13 */
+/* 13 0/0/1/0*/
 .fff * {
   color: pink;
 }
 
-/* 14 */
-.fff > p {
+/* 14 0/0/1/1*/
+.fff p {
   color: pink;
 }
 
-/* 15 */
+/* 15 0/0/1/1*/
 p.fff {
   color: pink;
 }
 
-/* 16 */
-.fff > .bbb {
+/* 16 0/0/2/0*/
+.fff .bbb {
   color: pink;
 }
 
-/* 17 */
-.fff > h2.bbb {
+/* 17 0/0/2/1*/
+.fff h2.bbb {
   color: pink;
 }
 
-/* 18 */
+/* 18 0/0/0/1*/
 span {
   color: pink;
 }
 
-/* 19 */
+/* 19 0/0/1/0*/
 [data-value='45'] {
   color: pink;
 }
 
-/* 20 */
-.parent .child {
+/* 20 0/0/2/0*/
+.parent > .child {
   color: pink;
 }
 
-/* 21 */
+/* 21 0/0/2/0*/
 .text.active {
   color: pink;
 }
 
-/* 22 */
+/* 22 0/1/0/2*/
 #my-list li:nth-child(2) {
   color: pink;
 }
 
-/* 23 */
-.six__parent > h1 + p {
+/* 23 0/0/1/2*/
+.six__parent h1 + p {
   color: red;
 }
 
-/* 24 */
-.six__parent > div + p {
+/* 24 0/0/1/2*/
+.six__parent div + p {
   border: 3px pink dashed;
 }
 
-/* 25 */
-.six__parent > * ~ :not(img) {
+/* 25 0/0/1/1*/
+.six__parent :not(img) {
   border: 3px solid black;
 }
 
