@@ -59,7 +59,7 @@ table,th,td {
   white-space: break-spaces;
 }
 
-.background {
+.section-5__background {
   display: flex;
   flex-direction: column;
   width: 700px;
@@ -538,3 +538,104 @@ footer {
   height: 100px;
   background-color: #dadada;
 }
+
+/* section 11 */
+
+.first__parent, .second__parent {
+  width: 100%;
+  height: 200px;
+  background-color: #4e4e4e;
+  margin-top: 20px;
+}
+
+.first__parent_child, .second__parent_child {
+  height: 50px;
+  width: 70px;
+  background-color: #ff5252;
+}
+
+.first__parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second__parent {
+  position: relative;
+}
+
+.second__parent_child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/* section 12 */
+
+.section-12__background {
+  position: relative;
+  height: 400px;
+  width: 600px;
+  border: 2px solid black;
+  overflow: hidden;
+}
+
+.background__img-first {
+  position: absolute;
+  height: 300px;
+  right: -25%;
+  top: -25%;
+}
+
+.background__img-second {
+  position: absolute;
+  height: 300px;
+  left: -24%;
+  bottom: -25%;
+}
+
+/* section 13 */
+
+.section-13__container {
+  width: 600px;
+}
+
+.section-13__container div {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(250, 50, 50);
+}
+
+/* Отступы устанавливаются для всех сторон */
+
+.container__elem_1 {
+  padding: 15px;
+  margin: 4px;
+}
+
+/* Первыое число - отступы по вертикали, второе - по горизонтали.
+Если указать горизонтальный отступ = auto, то элемент отцентрируется по горизонтали
+*/
+
+.container__elem_2 {
+  padding: 15px 24px;
+  margin: 0 auto;
+}
+
+/* Первое число - отступы сверху, второе - по горизонтали,
+Третье - отступы снизу */
+
+.container__elem_3 {
+  padding: 15px 0 24px;
+  margin: 15px 0 24px;
+}
+
+/* Отступы всех сторон, в следующем порядке: верх, право, низ, лево */
+
+.container__elem_4 {
+  padding: 1px 2px 3px 4px;
+  margin: 1px 2px 3px 4px;
+}
+
+/* section 14 */
