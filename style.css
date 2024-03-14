@@ -9,7 +9,7 @@
   margin: 20px 10px;
 }
 
-img {
+.six__parent img {
   height: 200px;
   width: 200px;
 }
@@ -67,7 +67,7 @@ table,th,td {
   padding: 10px 10px;
 }
 
-.container {
+.section-5__container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -247,3 +247,294 @@ span {
   border: 3px solid black;
 }
 
+/* 7 section */
+
+.seven__root {
+  display: flex;
+  position: relative;
+  background-color: pink;
+  width: 300px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.seven__elem {
+  position: static;
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  border: 4px black solid;
+  margin: 20px;
+}
+
+/* Если задать данные значения свойств - элемент начинает позиционироваться
+абсолютно (выводится из потока документа), 
+свойства top и left считаются от левого верхнего
+края родительского блока */
+/* .seven__test {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+} */
+
+/* Отличие от absolute заключается в том, что элемент позиционируется
+Относительно своей позиции по умолчанию */
+/* .seven__test {
+  position: relative;
+  top: 50px;
+  left: 50px;
+} */
+
+#space {
+  height: 400px;
+  width: 600px;
+  background-image: url(./img/space.png);
+  position: relative;
+}
+
+#space img {
+  position: absolute;
+}
+
+#elem_planet1 {
+  z-index: 8;
+  top: 200px;
+  left: 150px;
+  height: 170px;
+  width: 170px;
+}
+
+#elem_planet2 {
+  z-index: 6;
+  height: 125px;
+  left: 91px;
+  top: 145px;
+}
+
+#elem_planet3 {
+  z-index: 5;
+  top: 100px;
+  left: 170px;
+}
+
+#elem_astr {
+  z-index: 0;
+  height: 60px;
+  right: 100px;
+  top: 90px;
+}
+
+#elem_ufo {
+  z-index: 9;
+  top: 320px;
+  left: 140px;
+  height: 40px;
+}
+
+#elem_rocket {
+  z-index: 7;
+  height: 40px;
+  left: 146px;
+  top: 215px;
+}
+
+#elem_sups {
+  bottom: 0;
+  right: 15px;
+  height: 50px;
+  width: 50px;
+}
+
+/* 8 section */
+
+.eight__div {
+  margin: 30px;
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: pink;
+  border: 5px solid black;
+}
+
+.eight__right {
+  /* ширина и высота учитывают внутренние отступы и рамку */
+  box-sizing: border-box;
+}
+
+/* 9 section */
+
+.nine__root {
+  background-color: #6e0253;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  min-width: 900px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nine__elem_small {
+  height: 100px;
+  width: 200px;
+  background-color: orangered;
+}
+
+.nine__elem_large {
+  height: 100px;
+  width: 350px;
+  background-color: orangered;
+  margin: 0 10px;
+}
+
+#nine_1 {
+  flex-wrap: wrap;
+  height: 400px;
+}
+
+#nine_2 {
+  justify-content: flex-start;
+}
+
+#nine_3 {
+  justify-content: flex-end;
+}
+
+#nine_4 {
+  justify-content: center;
+}
+
+#nine_5 {
+  justify-content: space-between;
+}
+
+#nine_6 {
+  justify-content: space-around;
+}
+
+#nine_7 {
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+#nine_8 {
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+#nine_9 {
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nine_10 div {
+  height: 100%;
+}
+
+#nine_10 {
+  /* idk */
+  justify-content: space-between;
+  flex-grow: 0;
+  align-items: stretch;
+}
+
+#nine_11 {
+  align-items: first baseline;
+}
+
+#nine_11 .nine__elem_small {
+  font-size: 20px;
+}
+
+#nine_11 .nine__elem_large {
+  font-size: 40px;
+}
+
+header, footer {
+  width: 100%;
+  min-height: 150px;
+  background-color: gray;
+  display: flex;
+}
+
+header {
+  justify-content: center;
+  align-items: center;
+}
+
+.section-10__body {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.section-10__body * {
+  padding: 10px;
+}
+
+.section-10__body > * {
+  box-sizing: border-box;
+}
+
+.body__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  background-color: #f3ff86;
+}
+
+aside {
+  width: 30%;
+  background-color: #91fc8d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.container__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dff802;
+  width: 325px;
+  height: 50px;
+}
+
+.content__elem-large {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dff802;
+  width: 94%;
+  height: 50px;
+}
+
+.content__container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+footer {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer__elem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 215px;
+  height: 100px;
+  background-color: #dadada;
+}
