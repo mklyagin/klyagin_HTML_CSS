@@ -9,7 +9,7 @@
   margin: 20px 10px;
 }
 
-img {
+.six__parent img {
   height: 200px;
   width: 200px;
 }
@@ -247,3 +247,102 @@ span {
   border: 3px solid black;
 }
 
+/* 7 section */
+
+.seven__root {
+  display: flex;
+  position: relative;
+  background-color: pink;
+  width: 300px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.seven__elem {
+  position: static;
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  border: 4px black solid;
+  margin: 20px;
+}
+
+/* Если задать данные значения свойств - элемент начинает позиционироваться
+абсолютно (выводится из потока документа), 
+свойства top и left считаются от левого верхнего
+края родительского блока */
+/* .seven__test {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+} */
+
+/* Отличие от absolute заключается в том, что элемент позиционируется
+Относительно своей позиции по умолчанию */
+/* .seven__test {
+  position: relative;
+  top: 50px;
+  left: 50px;
+} */
+
+#space {
+  height: 400px;
+  width: 600px;
+  background-image: url(./img/space.png);
+  position: relative;
+}
+
+#space img {
+  position: absolute;
+}
+
+#elem_planet1 {
+  z-index: 8;
+  top: 200px;
+  left: 150px;
+  height: 170px;
+  width: 170px;
+}
+
+#elem_planet2 {
+  z-index: 6;
+  height: 125px;
+  left: 91px;
+  top: 145px;
+}
+
+#elem_planet3 {
+  z-index: 5;
+  top: 100px;
+  left: 170px;
+}
+
+#elem_astr {
+  z-index: 0;
+  height: 60px;
+  right: 100px;
+  top: 90px;
+}
+
+#elem_ufo {
+  z-index: 9;
+  top: 320px;
+  left: 140px;
+  height: 40px;
+}
+
+#elem_rocket {
+  z-index: 7;
+  height: 40px;
+  left: 146px;
+  top: 215px;
+}
+
+#elem_sups {
+  bottom: 0;
+  right: 15px;
+  height: 50px;
+  width: 50px;
+}
+
+/* 8 section */
